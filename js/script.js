@@ -8,7 +8,9 @@ for(let i = 0; i < 10; i++){
         const result = response.data;
         arrayEmail.push(result.response)
         // console.log(result.response);
-    
+        listaEmailRan.innerHTML += `
+            <li class="modificaLi">${result.response}</li>
+        `;
         if(arrayEmail.length == 10)console.log(arrayEmail);
         
     })
