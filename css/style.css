@@ -1,0 +1,13 @@
+.modificaLi{
+    list-style: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+body{
+    background-color: black;
+}
+
+.contenitoreUl{
+    margin-top: 30px;
+}
