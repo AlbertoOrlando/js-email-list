@@ -13,12 +13,12 @@ for(let i = 0; i < 10; i++){
         // `;
         // if(arrayEmail.length == 10)console.log(arrayEmail);
         if(arrayEmail.length == 10){
-                listaEmailRan.innerHTML = `
-                <li class = "modificaLi">${arrayEmail.join(" ")}</li>
-            `;
+                for(let i = 0; i < arrayEmail.length; i++ ){
+                    listaEmailRan.innerHTML += `
+                    <li class = "modificaLi">${arrayEmail[i]}</li>
+                `;
+                }
         };
-
-        
     })
     .catch(error => {
         console.error(error)
