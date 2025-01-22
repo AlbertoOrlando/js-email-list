@@ -8,10 +8,16 @@ for(let i = 0; i < 10; i++){
         const result = response.data;
         arrayEmail.push(result.response)
         // console.log(result.response);
-        listaEmailRan.innerHTML += `
-            <li class = "modificaLi">${result.response}</li>
-        `;
-        if(arrayEmail.length == 10)console.log(arrayEmail);
+        // listaEmailRan.innerHTML += `
+        //     <li class = "modificaLi">${result.response}</li>
+        // `;
+        // if(arrayEmail.length == 10)console.log(arrayEmail);
+        if(arrayEmail.length == 10){
+                listaEmailRan.innerHTML = `
+                <li class = "modificaLi">${arrayEmail.join(" ")}</li>
+            `;
+        };
+
         
     })
     .catch(error => {
